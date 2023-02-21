@@ -1,0 +1,42 @@
+body{
+	background-color: #232529;
+}
+/* card{
+	height: 650px;
+} */
+.movieCard{
+	height: 650px;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+.movieCard img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.movieCard figcaption{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.rating{
+	color:orange;
+	
+}
+.movieCard .overview{
+	position: absolute;
+	bottom: -600%;
+	left: 0;
+	width: 100%;
+	transition: all .6s ease-in-out;
+	
+}
+.movieCard:hover .overview {
+	bottom: 0;
+	
+}
+.movieContainer .card:hover{
+	transform: scale(1.006) translateX(-5px);
+}
